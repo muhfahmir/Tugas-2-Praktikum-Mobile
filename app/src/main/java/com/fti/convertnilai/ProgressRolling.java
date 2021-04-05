@@ -12,14 +12,12 @@ import android.widget.Toast;
 
 public class ProgressRolling extends AppCompatActivity {
     private ProgressBar progressBar;
-    private TextView persentase;
-    private int Value = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_progress_rolling);
-        progressBar = findViewById(R.id.progress);k
+        progressBar = findViewById(R.id.progress);
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
