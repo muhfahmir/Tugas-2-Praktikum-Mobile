@@ -19,25 +19,7 @@ public class ProgressRolling extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_progress_rolling);
-        progressBar = findViewById(R.id.progress);
-//        persentase = findViewById(R.id.persentase);
-//        progressBar.setProgress(0);
-//
-//        final Handler handler = new Handler(){
-//            @Override
-//            public void handleMessage(Message msg) {
-//                super.handleMessage(msg);
-//                // Menampung semua data yang ingin diproses oleh thread
-//                persentase.setText(String.valueOf(Value)+"%");
-//                if(Value == progressBar.getMax()){
-//                    Toast.makeText(getApplicationContext(), "Progress Completed", Toast.LENGTH_SHORT).show();
-//                    startActivity(new Intent(ProgressRolling.this, MainActivity.class));
-//                    finish();
-//                }
-//                Value++;
-//            }
-//        };
-
+        progressBar = findViewById(R.id.progress);k
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
