@@ -39,8 +39,9 @@ public class MainActivity extends AppCompatActivity {
                     String sNilai = etNilai.getText().toString();
 
                     Double dNilai = Double.parseDouble(sNilai);
-
-                    if(dNilai < 4.00){
+                    if(sNama.equals("")||sNim.equals("")||sNilai.equals("")){
+                        Toast.makeText(getApplicationContext(), "Field tidak boleh kosong", Toast.LENGTH_SHORT).show();
+                    }else if(dNilai <= 4.00){
                         btnSubmit.setText("Please Wait ...");
                         progressBar.setVisibility(v.VISIBLE);
                         if(dNilai> 3.66 && dNilai <= 4.00){
