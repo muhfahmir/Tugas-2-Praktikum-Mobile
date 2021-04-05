@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
                     String sNilai = etNilai.getText().toString();
 
                     Double dNilai = Double.parseDouble(sNilai);
+
                     if(dNilai < 4.00){
                         btnSubmit.setText("Please Wait ...");
                         progressBar.setVisibility(v.VISIBLE);
